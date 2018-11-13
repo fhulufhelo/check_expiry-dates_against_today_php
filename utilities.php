@@ -7,7 +7,7 @@
 */
 function get_expired_item($expiration){
   if (!$expiration instanceof DateTime) {
-    throw new InvalidExpiration('Expiration date must be an instance of DateTime or an integer');
+    throw new ('Expiration date must be an instance of DateTime or an integer');
   }
 
   $expiry= [];
